@@ -1,7 +1,7 @@
 /* inicio*/
 body {
     font-family: Century Gothic;
-    background: linear-gradient(135deg, #4A90E2, #9013FE, #b371ec);
+    background: linear-gradient(135deg, #3c3f9c, #781ad6, #ce90f4);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,13 +34,15 @@ h1 {
     margin: 10px 0;
     border: none;
     border-radius: 5px;
-    background-color: #9013FE;
+    background-color: #6f11ce
+    ;
     color: white;
     font-size: 18px;
     cursor: pointer;
 }
 .btn:hover {
-    background-color: #5c1e93;
+    background-color: #6411b7
+    ;
 }
 .register-section {
     margin-top: 20px;
@@ -50,7 +52,7 @@ h1 {
     margin-right: 5px;
 }
 .register-btn {
-    background-color: #4A90E2;
+    background-color: #23255d;
     color: white;
     border-radius: 4px;
     padding: 8px 12px;
@@ -59,7 +61,7 @@ h1 {
     cursor: pointer;
 }
 .register-btn:hover {
-    background-color: #053164;
+    background-color: #15173a;
 }
 
 /*iniciar sesion*/
@@ -88,7 +90,7 @@ h1 {
 .form-group input {
     width: 90%;
     padding: 10px;
-    border: 4px solid #9013FE;
+    border: 4px solid #6f11ce;
     border-radius: 5px;   
 }
 
@@ -96,7 +98,7 @@ h1 {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #9013FE;
+    background-color: #6f11ce;
     color: rgb(255, 255, 255);
     border: none;
     border-radius: 8px;
@@ -104,7 +106,7 @@ h1 {
 }
 
 .btn2:hover:hover {
-    background-color: #5c1e93;
+    background-color: #6411b7;
 }
 
 
@@ -154,4 +156,131 @@ button.btn3 {
 button.btn3:hover {
     background-color: #4d0b87;
 }
+
+/*FORMULARIO*/
+
+.form-container {
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* Espacio entre las opciones (números) y el botón */
+.options {
+    margin-bottom: 40px; /* Ajusta el valor según el espacio que necesites */
+}
+
+button {
+    background-color: #9013FE;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #ce90f4;
+}
+
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+#finalScreen {
+    text-align: center;
+}
+
+#finalScreen h2 {
+    color: #000000;
+}
+
+#finalScreen p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.question {
+    display: none;
+}
+
+.question.active {
+    display: block;
+}
+
+.final-screen {
+    display: none;
+    text-align: center;
+}
+
+.final-screen.active {
+    display: block;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.back-button {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #555;
+}
+#tipoApr{
+    color:#6f11ce
+
+}
+.question {
+    display: none;
+}
+
+.question.active {
+    display: block;
+}
+.options {
+    display: flex;
+    flex-direction: row; /* Muestra los elementos de forma horizontal */
+    gap: 20px; /* Espacio entre cada opción */
+    align-items: center; /* Alinea verticalmente los radio botones con los números */
+}
+
+.options input[type="radio"] {
+    margin-right: 5px; /* Espacio entre el radio botón y el número */
+    cursor: pointer; /* Hace que el cursor cambie al pasar sobre el radio botón */
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px; /* Espacio entre las opciones */
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.options input[type="radio"] {
+    margin-right: 10px; /* Espacio entre el botón de radio y el número */
+}
+
 
